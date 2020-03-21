@@ -28,7 +28,7 @@ content = `
         <table>
             <tr>
                 <td><input class="button" type="button" value="C" onclick="clean()"></td>
-                <td><input class="button" type="button" value="&#x232b;" onclick="back()"></td>
+                <td><input class="symbol" type="button" value="&#x232b" onclick="back()"></td>
                 <td><input class="button" type="button" value="/" onclick="insert(' / ')"></td>
                 <td><input class="button" type="button" value="x" onclick="insert(' x ')"></td>
             </tr>
@@ -68,6 +68,17 @@ initCss(`
         background: #0081AB;
         border: none;
         color: white;
+    }
+    .main .symbol {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        margin: 2px;
+        cursor: pointer;
+        background: #0081AB;
+        border: none;
+        color: white;
+        padding-bottom: 7px;
     }
     .main .button:hover {
         color: black;
